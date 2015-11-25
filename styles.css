@@ -1,0 +1,27 @@
+body {
+	background: url('images/backgr.png');
+}
+
+.social {
+    
+}
+
+.social_vk {
+	background-image: url('images/vk.png');
+	display: inline;
+}
+
+.social_fb {
+	background: url('images/vk.png');
+	display: inline;
+}
+
+.social_tw {
+	background: url('images/vk.png');
+	display: inline;
+}
+
+.social_gh {
+	background: url('images/vk.png');
+	display: inline;
+}
