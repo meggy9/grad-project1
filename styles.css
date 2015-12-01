@@ -2,26 +2,448 @@ body {
 	background: url('images/backgr.png');
 }
 
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+	position: relative;
+}
+
+ul {
+	list-style-type: none;
+}
+
+
+                                                      /*************MAIN PAGE STYLE***************/
+
+
+                            /****** HEADER *******/
+header {
+	min-width: 1200px;
+	width: 100%;
+	background-color: #eff3f7;
+}
+
+.headerWrap {
+	width: 1200px;
+	height: 120px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.logo{
+	left: 0;
+	bottom: 40px;
+	position: absolute;
+}
+
 .social {
-    
+    right: 0;
+	bottom: 40px;
+	position: absolute;
+}
+
+.social ul {
+	margin: 0;
 }
 
 .social_vk {
-	background-image: url('images/vk.png');
 	display: inline;
+	margin-left: 10px;
 }
 
 .social_fb {
-	background: url('images/vk.png');
 	display: inline;
+	margin-left: 10px;
 }
 
 .social_tw {
-	background: url('images/vk.png');
 	display: inline;
+	margin-left: 10px;
 }
 
 .social_gh {
-	background: url('images/vk.png');
 	display: inline;
+	margin-left: 10px;
 }
+
+
+
+                             /*****CONTENT*****/
+
+
+.content {
+    height: auto;
+	width: 960px;
+	margin: 0 auto;
+	padding-bottom: 39px;
+}
+
+.content::after{
+    display: block;
+    content: "";
+	clear: both;
+}
+
+.links {
+	float: left;
+	width: 250px;
+}                             
+
+.menu {
+	float: left;
+	width: 250px;
+	margin-top: 39px;
+	background-color: #eff3f7;
+	border-radius: 5px;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+	padding: 25.3px 28px;
+	
+	/*border-top: 2px solid #3ba8c0;*/
+}
+
+a {
+	text-decoration: none;
+}
+
+hr {
+	width: 230px;
+	border-top: 3px solid #3ba8c0;
+	margin: 0 auto; 
+}
+
+.menu ul li a {
+    color: #a9aeb9;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+	color: #3ba8c0;
+}
+
+
+.contacts {
+	margin-bottom: 39px;
+	overflow: hidden;
+	margin-top: 23px;
+	float: left;
+	width: 250px;
+	border-radius: 5px;
+	background-color: #eff3f7;
+}
+
+.contacts ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contactsHeader {
+    background-color: #3ba8c0;
+    font-size: 16px;
+    margin: 0;
+    height: 40px;
+} 
+
+.contactsHeaderText {
+	padding: 14px 0 0 21px;
+	color: white;
+}
+
+.contactsEmail {
+	background-color: #41b9d4;
+	font-size: 14px;
+	height: 40px;
+}
+
+.contactsPhone {
+	background-color: #48cbe8;
+	font-size: 14px;
+	height: 40px;
+}
+
+.contactsSkype {
+	background-color: #51daf8; 
+	font-size: 14px;
+	height: 40px;
+}
+
+.contactsImage {
+	height: 26px;
+	float: left;
+	margin: 11px 0 0 42px;
+}
+
+.contactsLink {
+	color: white;
+	width: 167px;
+	height: 26px;
+	float: right;
+    margin: 11px 0 0 20px;
+}
+
+.linkBlock {
+	display: block;
+	text-decoration: none;
+}
+
+.contactsLink a:hover {
+    
+}
+
+
+
+
+
+.content_block {
+    width: 650px;
+    float: left;
+    margin: 39px 0 76px 60px;
+}
+
+.basicInfo {
+	background-color: #eff3f7;
+    padding: 22px 22px 22px 0;  
+    margin-bottom: 26px;  
+}
+
+.basicInfo:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.header {
+	width: 280px;
+
+	margin-top: 0;
+	padding-left: 22px;
+	padding-right: 22px;
+	color: #3ba8c0;
+	border-bottom: 3px solid #3ba8c0;
+}
+
+.avatarCover {
+	min-height: 350px;
+	width: 167px;
+	float: left;
+	padding-left: 22px;
+	padding-right: 22px;
+}
+
+.avatar {
+	float: right;
+	border: 3px solid #34a7bd;
+	overflow: hidden;
+	width: 139px;
+	height: 139px;
+	-moz-border-radius: 100px; /* Firefox */
+	-webkit-border-radius: 100px; /* Safari, Chrome */
+	-khtml-border-radius: 100px; /* KHTML */
+	border-radius: 100px; /* CSS3 */
+	behavior: url(border-radius.htc); /*IE */
+}
+
+.infoBlock {
+	width: 400px;
+	float: left;
+	border-radius: 5px;
+}
+
+.infoBlock ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.infoBlock ul>li {
+	width: 400px;
+	margin-bottom: 23px;
+}
+
+.infoStringTag {
+	float: left;
+}
+
+.infoStringName {
+	display: inline-block;
+    max-width: 284px;
+    margin: 0;
+    padding-left: 21px;
+}
+
+.infoStringAge {
+	display: inline-block;
+    max-width: 274px;
+    margin: 0;
+    padding-left: 21px;
+}
+
+.infoStringCity {
+	display: inline-block;
+    max-width: 291px;
+    margin: 0;
+    padding-left: 21px;
+}
+
+.infoStringProf {
+	display: inline-block;
+    max-width: 214px;
+    margin: 0;
+    padding-left: 21px;
+}
+
+.infoStringExp {
+	display: inline-block;
+    max-width: 202px;
+    margin: 0;
+    padding-left: 21px;
+}
+
+.experiencEducation {
+	background-color: #eff3f7;
+    padding: 22px 22px 22px 0;
+    margin-bottom: 26px;
+    border-radius: 5px;
+}
+
+.experiencEducation ul {
+    padding: 0;
+}
+
+.experiencEducation ul li {
+	
+}
+
+.li_doc {
+    background: url("images/doc.png") no-repeat;
+    margin-left: 63px;
+}
+
+.li_cap {
+    background: url("images/acad_cap.png") no-repeat;
+    margin-left: 56px;
+}
+
+.li_case {
+	background: url("images/case.png") no-repeat;
+    margin-left: 58px;
+}
+
+.nameString {
+    margin-bottom: 8px;
+    margin-top: 26px;
+    font-size: 13pt;
+    padding-left: 64px;
+}
+
+.dateString {
+	margin-top: 8px;
+	margin-bottom: 26px;
+	font-size: 11pt;
+	padding-left: 64px;
+}
+
+.stringAcadCap {
+	padding-left: 64px;
+}
+
+.stringDoc {
+    padding-left: 59px;
+}
+
+
+                          /*******FOOTER*********/
+
+
+footer {
+	height: 76px;
+	width: 100%;
+	background-color: #eff3f7;
+	position: absolute;
+	bottom:0px;
+    left:0px;
+}
+
+.footerWrap {
+	width: 960px;
+	height: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+
+.auth {
+	position: absolute;
+	left: 31px;
+	top: 23px;
+}
+
+.footerString {
+    margin: 0 auto;
+    width: 497px;
+    line-height: 76px;
+}
+
+
+
+                                               /*************MYWORKS PAGE STYLE***************/
+
+
+.siteCatalog {
+	padding: 19px;
+	padding-right: 0px;
+}
+
+
+
+.siteBlock {
+	margin-right: 24px;
+	width: 183px;
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+}
+
+.site {
+	border-radius: 5px;
+	width: 183px;
+	height: 129px;
+	border: 2px solid #1b9eb7;
+}
+
+.siteLinkBlock {
+    margin: 0;
+    text-align: center;
+}
+
+.siteLinkBlock a {
+
+}
+
+.siteLink {
+	font-style: italic;
+	font-size: 11pt;	
+}
+
+.siteDescription {
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+
+
+
+
