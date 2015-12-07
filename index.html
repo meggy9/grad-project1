@@ -5,8 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<title>Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="bower_components\normalize.css\normalize.css">
-		<link rel="stylesheet" href="styles.css" type="text/css">
-
+		<link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+        <link rel="stylesheet" href="bower_components\jquery\dist\jquery.js">
+        <link rel="stylesheet" href="main.js">
 </head>
 
 <body>
@@ -18,12 +20,14 @@
 				</div>	
 				<div class="social">
 					<ul>
-						<li class="social_vk"><a href="http://vk.com/meggy9"><img src="images/vk.png"></a></li>
-						<li class="social_fb"><a href="http://facebook.com/meggy9"><img src="images/fb.png"></a></li>
-						<li class="social_tw"><a href="http://twitter.com/meggy9"><img src="images/tw.png"></a></li>
-						<li class="social_gh"><a href="http://github.com/meggy9"><img src="images/git.png"></a></l>
+						<a href="http://vk.com/meggy9"><li class="sprite sprite-vk"></a></li>
+						<li class="sprite sprite-fb"><a href="http://facebook.com/meggy9"></a></li>
+						<li class="sprite sprite-tw"><a href="http://twitter.com/meggy9"></a></li>
+						<li class="sprite sprite-git"><a href="http://github.com/meggy9"></a></li>
 					</ul>
 				</div>
+				<div class="gradient-left gradient-header"></div>
+				<div class="gradient-right gradient-header"></div>
 		    </div>
 		</header>
 
@@ -34,9 +38,9 @@
 			<div class = "links">
 				<div class="menu">
 					<ul>
-						<li><a href="#">Обо мне</a></li><hr></hr>
-						<li><a href="myworks.html">Мои работы</a></li><hr></hr>
-						<li><a>Связаться со мной</a></li>
+						<li class="active-link"><div class="border-line border-line-none"><a href="#">Обо мне</a></div></li>
+						<li><div class="border-line"><a href="myworks.html">Мои работы</a></div></li>
+						<li><div class="border-line"><a href="contactme.html">Связаться со мной</a></div></li>
 					</ul>
 				</div>
 
@@ -46,13 +50,13 @@
 					        <div class="contactsHeaderText">Контакты</div>
 					    </li>
 						<li class="contactsEmail">
-					        <a class="linkBlock" href="http://vk.com">
+					        <a class="linkBlock" href="mailto:meggy9@mail.ru">
 						        <div class="contactsImage"><img src="images/email.png"></img></div>
 						        <div class="contactsLink">meggy9@mail.ru</div>
 						    </a>
 						</li>
 						<li class="contactsPhone">
-						    <a class="linkBlock" href="http://vk.com">
+						    <a class="linkBlock" href="tel:+79065741683">
 							    <div class="contactsImage"><img src="images/tel.png"></img></div>
 							    <div class="contactsLink">+79065741683</div>
 							</a>
@@ -94,7 +98,13 @@
 							</li>
 							<li>
 									<div class="infoStringTag"><strong>Ключевые навыки: </strong></div>
-									<p class="infoStringExp">цуцуцу цуцуцу цуцуцу цуцуцу цуцуцу цуцуцу цуцуцу цуцуцу цуцуцу</p>
+									<p class="infoStringExp">
+										<button disabled class="button-b">html</button>
+										<button disabled class="button-b">css</button>
+										<button disabled class="button-b">javascript</button>
+										<button disabled class="button-b">gulp</button>
+										<button disabled class="button-b">git</button>
+									</p>
 							</li>
 						</ul>
 					</div>
@@ -130,7 +140,11 @@
 		</div>
 		<footer>
 			<div class="footerWrap">
-			    <a href="#"><img src="images/login.png" alt="Log in" class="auth"></a>
+
+                <div class="gradient-left gradient-footer"></div>
+				<div class="gradient-right gradient-footer"></div>
+
+			    <a href="#"><div class="auth"></div></a>
                 <p class="footerString">&#169 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>                    
 			</div>
 		</footer>

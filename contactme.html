@@ -5,8 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<title>Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="bower_components\normalize.css\normalize.css">
-		<link rel="stylesheet" href="styles.css" type="text/css">
-
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -18,13 +19,16 @@
 				</div>	
 				<div class="social">
 					<ul>
-						<li class="social_vk"><a href="http://vk.com/meggy9"><img src="images/vk.png"></a></li>
-						<li class="social_fb"><a href="http://facebook.com/meggy9"><img src="images/fb.png"></a></li>
-						<li class="social_tw"><a href="http://twitter.com/meggy9"><img src="images/tw.png"></a></li>
-						<li class="social_gh"><a href="http://github.com/meggy9"><img src="images/git.png"></a></l>
+						<a href="http://vk.com/meggy9"><li class="sprite sprite-vk"></a></li>
+						<li class="sprite sprite-fb"><a href="http://facebook.com/meggy9"></a></li>
+						<li class="sprite sprite-tw"><a href="http://twitter.com/meggy9"></a></li>
+						<li class="sprite sprite-git"><a href="http://github.com/meggy9"></a></li>
 					</ul>
 				</div>
+				<div class="gradient-left gradient-header"></div>
+				<div class="gradient-right gradient-header"></div>
 		    </div>
+
 		</header>
 
 
@@ -34,9 +38,9 @@
 			<div class = "links">
 				<div class="menu">
 					<ul>
-						<li><a href="#">Обо мне</a></li><hr></hr>
-						<li><a href="myworks.html">Мои работы</a></li><hr></hr>
-						<li><a>Связаться со мной</a></li>
+						<li><div class="border-line border-line-none"><a href="index.html">Обо мне</a></div></li>
+						<li><div class="border-line"><a href="myworks.html">Мои работы</a></div></li>
+						<li class="active-link"><div class="border-line"><a href="#">Связаться со мной</a></div></li>
 					</ul>
 				</div>
 
@@ -46,13 +50,13 @@
 					        <div class="contactsHeaderText">Контакты</div>
 					    </li>
 						<li class="contactsEmail">
-					        <a class="linkBlock" href="http://vk.com">
+					        <a class="linkBlock" href="mailto:meggy9@mail.ru">
 						        <div class="contactsImage"><img src="images/email.png"></img></div>
 						        <div class="contactsLink">meggy9@mail.ru</div>
 						    </a>
 						</li>
 						<li class="contactsPhone">
-						    <a class="linkBlock" href="http://vk.com">
+						    <a class="linkBlock" href="tel:+79065741683">
 							    <div class="contactsImage"><img src="images/tel.png"></img></div>
 							    <div class="contactsLink">+79065741683</div>
 							</a>
@@ -67,70 +71,37 @@
 				</div>
             </div>
 
-            <div class="content_block">
-				<div class = "basicInfo">
-					<h2 class="header">Основная информация</h2>
-					<div class="avatarCover">
-						<div class="avatar"><img src="images/avatar.jpg" alt="">
-					    </div>
+            <div class="content_block content_block_round_angles">
+				<div class="writeMeHeader"><div class="writeMeHeaderString" >У вас интересный проект? Напишите мне!</div></div>
+				<form action="" class="writeMeForm">
+				    <div class="inputFieldBlock" style="margin-right: 36.334px">
+				        <p class="inputFieldHeader">Имя</p>
+						<input class="inputField" type="text" name="name" placeholder="Как к вам обращаться">
 					</div>
-					<div class="infoBlock">
-						<ul>
-							<li>								
-								    <div class="infoStringTag"><strong>Меня зовут: </strong></div>
-								    <p class="infoStringName">Мирзоев Рамазан Султанович</p>								
-							</li>
-							<li>									
-									<div class="infoStringTag"><strong>Мой возраст: </strong></div>
-									<p class="infoStringAge">21 год</p>							
-							</li>
-							<li>									
-									<div class="infoStringTag"><strong>Мой город: </strong></div>
-									<p class="infoStringCity">Курск, Россия</p>								
-							</li>
-							<li>									
-									<div class="infoStringTag"><strong>Моя специализация: </strong></div>
-									<p class="infoStringProf">Frontend разработчик</p>								
-							</li>
-							<li>
-									<div class="infoStringTag"><strong>Ключевые навыки: </strong></div>
-									<p class="infoStringExp">цуцуцу цуцуцу цуцуцу цуцуцу цуцуцу цуцуцу цуцуцу цуцуцу цуцуцу</p>
-							</li>
-						</ul>
+				    <div class="inputFieldBlock">
+				        <p class="inputFieldHeader">Email</p>
+						<input class="inputField" type="text" name="Email" placeholder="Куда вам писать">
 					</div>
-				</div>
-				<div class = "experiencEducation">
-				    <h2 class = "header">Опыт работы</h2>
-					<ul>
-						<li class="li_case">
-							<p class="nameString">"ИП Боровицкий - Продавец дисков"</p>
-							<p class="dateString">Сентябрь 2005 - Август 2008</p>							
-						</li>
-						<li class="li_case">
-							<p class="nameString">"ООО Системы безопастности" - Системный администратор</p>
-							<p class="dateString">Июнь 2008 - Июль 2010</p>
-						</li>
-					</ul>
-				</div>
-				<div class = "experiencEducation">
-				    <h2 class="header">Образование</h2>
-                    <ul>
-                    	<li class="li_cap">
-                    		<p class="nameString stringacadCap">Незаконченное высшее - КГУ</p>
-                    		<p class="dateString stringacadCap">Сентябрь 2011 - по настоящее время</p>
-                    	</li>
-                    	<li class="li_doc">
-                    		<p class="nameString stringDoc">Курсы Loftschool.ru</p>
-                    		<p class="dateString stringDoc">Ноябрь 2014 - по настоящее время</p>
-                    	</li>
-                    </ul>
-				</div>
+					<div class="inputFieldBlock">
+ 						<p class="inputFieldHeader">Сообщение</p>
+ 						
+						<textarea class="textArea" placeholder=" Напишите мне"></textarea>
+					</div>
+										
+					<div class="g-recaptcha captcha" data-sitekey="6LcGNxITAAAAAO6ESnNexzk61Q5kXqUxHwNOOElx"></div>
+					<input class="sendButton" type="submit" name="submitProjectForm" value="Отправить">
+					<input class="clearButton" type="button" name="clearAll" value="Очистить">
+				</form>
 			</div> 
 
 		</div>
 		<footer>
 			<div class="footerWrap">
-			    <a href="#"><img src="images/login.png" alt="Log in" class="auth"></a>
+				
+				<div class="gradient-left gradient-footer"></div>
+				<div class="gradient-right gradient-footer"></div>
+			    
+			    <a href="#"><div class="auth"></div></a>
                 <p class="footerString">&#169 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>                    
 			</div>
 		</footer>
